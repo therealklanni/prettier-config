@@ -1,0 +1,23 @@
+{
+  "name": "@therealklanni/prettier-config",
+  "version": "0.1.0",
+  "description": "Prettier config",
+  "author": "Kevin Lanni <therealklanni@gmail.com> (https://github.com/therealklanni)",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/therealklanni/prettier-config.git"
+  },
+  "keywords": [
+    "prettierconfig",
+    "prettier-config"
+  ],
+  "bugs": {
+    "url": "https://github.com/therealklanni/prettier-config/issues"
+  },
+  "homepage": "https://github.com/therealklanni/prettier-config#readme"
+}
