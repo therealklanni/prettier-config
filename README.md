@@ -10,7 +10,7 @@ A minimal [Prettier](https://prettier.io) config.
 ## Usage
 
 ```sh
-npm install --save-dev @therealklanni/prettier-config
+npm install --save-dev @therealklanni/prettier-config prettier
 ```
 
 Add `"prettier": "@therealklanni/prettier-config"` to your package.json ([more info](https://prettier.io/docs/en/configuration.html#sharing-configurations)).
