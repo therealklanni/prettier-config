@@ -8,6 +8,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "eslintConfig": {
+    "extends": [
+      "@therealklanni/eslint-config/node",
+      "@therealklanni/eslint-config/prettier"
+    ]
+  },
+  "prettier": "./",
+  "lint-staged": {
+    "*.js": ["eslint --fix"]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/therealklanni/prettier-config.git"
@@ -22,6 +32,7 @@
   "homepage": "https://github.com/therealklanni/prettier-config#readme",
   "husky": {
     "hooks": {
+      "pre-commit": "lint-staged",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
@@ -29,6 +40,13 @@
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "@therealklanni/commitlint-config": "^0.1.0",
-    "husky": "^4.2.3"
+    "@therealklanni/eslint-config": "^1.0.0-4",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.4.0",
+    "prettier": "^1.19.1"
   }
 }
