@@ -6,7 +6,9 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "standard-version",
+    "postrelease": "git push --follow-tags origin master && npm publish"
   },
   "eslintConfig": {
     "extends": [
@@ -16,7 +18,9 @@
   },
   "prettier": "./",
   "lint-staged": {
-    "*.js": ["eslint --fix"]
+    "*.js": [
+      "eslint --fix"
+    ]
   },
   "repository": {
     "type": "git",
@@ -47,6 +51,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "husky": "^4.2.3",
     "lint-staged": "^10.4.0",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "standard-version": "^9.0.0"
   }
 }
