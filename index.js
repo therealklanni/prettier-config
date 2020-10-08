@@ -1,1 +1,7 @@
-module.exports = { endOfLine: 'lf', printWidth: 100, semi: false, singleQuote: true }
+module.exports = {
+  endOfLine: 'lf',
+  printWidth: 100,
+  semi: false,
+  singleQuote: true,
+  trailingComma: 'none'
+}
